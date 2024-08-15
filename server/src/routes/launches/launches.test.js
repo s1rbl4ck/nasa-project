@@ -8,7 +8,7 @@ const API_VERSION = "/v1";
 describe("Launches API", () => {
     beforeAll(async () => {
         await mongoConnect();
-        loadPlanetsData();
+        await loadPlanetsData();
     });
 
     afterAll(async () => {
